@@ -1,5 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 
+
+
 db = SQLAlchemy()
 
 class Registrant(db.Model):
@@ -8,5 +10,5 @@ class Registrant(db.Model):
 	name = db.Column(db.String, nullable=False)
 	organisation = db.Column(db.String, nullable=False)
 	post = db.Column(db.String, nullable=False)
-	ph_number = db.Column(db.Integer, nullable=False)
+	ph_number = db.Column( db.VARCHAR, nullable=False)
 	email = db.Column(db.String, nullable=False)

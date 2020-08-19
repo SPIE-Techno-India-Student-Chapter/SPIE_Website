@@ -2,11 +2,38 @@
 {% block title %} Register For The Event{% endblock %}
 
 {% block body %}
-
 <link rel="stylesheet" href="/static/css/style_registration.css">
 
-<a type="button" href="{{ url_for('home') }}" class="btn btn-outline-primary back">Home</a>
+<nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
+    
+    <a href="{{ url_for('home') }}" class="navbar-brand">   
+        
+        <h3 id="brand">SPIE.</h3>
+        <div id="chapter">
+            STUDENT <br>CHAPTER
+        </div>
+        <div id="branch">TECHNO INDIA</div>
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+          </li>
+          
+        </ul>
+      </div>
 
+</nav>
+
+
+
+<form action="{{ url_for('submit') }}" class = "form-group" method="post">
 <div class="wrapper">
     <div class="title">
       Register For The Webinar On Indian Space Mission
@@ -14,21 +41,21 @@
     <div class="form">
        <div class="inputfield">
           <label>Full Name</label>
-          <input type="text" class="input">
+          <input type="text" class="input" name="Name" required>
        </div>  
         
        <div class="inputfield">
           <label>Email</label>
-          <input type="email" class="input" required="True">
+          <input type="email" class="input" name="email" required >
        </div>  
       <div class="inputfield">
           <label>Contact Number</label>
-          <input type="contact" class="input">
+          <input type="tel" class="input" name="ph_number" required>
        </div> 
         <div class="inputfield">
           <label>Role</label>
           <div class="custom_select">
-            <select>
+            <select name="role">
               <option value="">Select</option>
               <option value="student">Student</option>
               <option value="faculty">Faculty</option>
@@ -38,7 +65,7 @@
 
        <div class="inputfield">
         <label>Organisation Name</label>
-        <input type="text" class="input">
+        <input type="text" class="input" name="organisation">
      </div> 
         
       
@@ -47,6 +74,7 @@
       </div>
     </div>
 </div>
+</form>
 	
 
 
