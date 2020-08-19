@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block title %} Register For The Event{% endblock %}
+
+{% block body %}
+
+<link rel="stylesheet" href="/static/css/style_registration.css">
+
+<a type="button" href="{{ url_for('home') }}" class="btn btn-outline-primary back">Home</a>
+
+<div class="wrapper">
+    <div class="title">
+      Register For The Webinar On Indian Space Mission
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>Full Name</label>
+          <input type="text" class="input">
+       </div>  
+        
+       <div class="inputfield">
+          <label>Email</label>
+          <input type="email" class="input" required="True">
+       </div>  
+      <div class="inputfield">
+          <label>Contact Number</label>
+          <input type="contact" class="input">
+       </div> 
+        <div class="inputfield">
+          <label>Role</label>
+          <div class="custom_select">
+            <select>
+              <option value="">Select</option>
+              <option value="student">Student</option>
+              <option value="faculty">Faculty</option>
+            </select>
+          </div>
+       </div> 
+
+       <div class="inputfield">
+        <label>Organisation Name</label>
+        <input type="text" class="input">
+     </div> 
+        
+      
+      <div class="button">
+        <button type="submit" class="btn btn-secondary btn-lg btn-block">Submit</button>
+      </div>
+    </div>
+</div>
+	
+
+
+
+{% endblock %}
