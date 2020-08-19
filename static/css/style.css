@@ -278,9 +278,19 @@ img.image{
 @media (max-width:800px){
 
 div#home{
-    height: 400px;
+    height: 300px;
     width: 100%;
 }
 
+}
+
+
+#sticky-footer{
+    margin-top: 15%;
+    width: 100%;
+}
+
+.icons{
+    margin-left: 45%;
 }
 
