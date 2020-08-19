@@ -1,5 +1,4 @@
 {% extends "layout.html" %}
-<<<<<<< HEAD
 {% block title %} Register For The Event{% endblock %}
 
 {% block body %}
@@ -52,43 +51,4 @@
 
 
 
-=======
-
-
-{% block body %}
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="{{ url_for('static', filename='style_registration.css') }}">
-<title>Interview!</title>
-	<form action = "{{ url_for('home')}}" method="post">
-	<div class="login-box">
-		<h1>Register for SPIE</h1>
-		<div class="textbox">
-			<i class="fa fa-user" aria-hidden="true"></i>
-			<input type="text" placeholder="Enter Your Full Name" name="name">
-		</div>
-		<div class="textbox">
-			<i class="fa fa-envelope" aria-hidden="true"></i>
-			<input type="email" placeholder="Enter Your email-Id" name="email">
-		</div>
-		<div class="textbox">
-			<i class="fa fa-building" aria-hidden="true"></i>
-			<input type="text" placeholder="Organisation Name" name="organisation">
-		</div>
-		<div class="textbox">
-			<i class="fa fa-briefcase" aria-hidden="true"></i>
-			<label for ="post">Your Post</label>
-			<div><select id = "post">
-				<option value="value0">Select from the options</option>
-				<option value="value1">Faculty</option>
-				<option value="value2">Student</option>	
-			</select></div>
-		</div>
-		<div class="textbox">
-			<i class="fa fa-phone" aria-hidden="true"></i>
-			<input type="phone" placeholder="Mobile number" name="ph_number">
-		</div>
-
-		<button type="submit">Register</button>
-</div>
->>>>>>> 9a5690c979bf1e0de48997a8b3dabf71b60c958d
 {% endblock %}

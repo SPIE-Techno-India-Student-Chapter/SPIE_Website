@@ -16,9 +16,7 @@ def register():
     return render_template("registration.html")
 
 
-@app.route("/registration")
-def register():
-    return render_template("registration.html")
+
 
 
 if __name__=="__main__":
