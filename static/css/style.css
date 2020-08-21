@@ -274,10 +274,15 @@ img.image{
 
 }
 
-@media (max-width:800px){
+@media all and (max-width:800px){
 
+body{
+    text-align: left;
+    word-wrap: break-word;;
+    
+}
 div#home{
-    height: 300px;
+    height: 270px;
     width: 100%;
 }
 .heading{
@@ -285,20 +290,41 @@ div#home{
 }
 
 .about-lecturer{
-    font-style: italic;
-    text-align: center;    
-    margin-top: 30px;    
-    width: 80%;   
+    font-style: normal;        
+    margin-top: 30px; 
+    margin-left: 20px;   
+    width: 80%;
+    border-radius: 26px; 
+   text-align: justify;
+    padding: 0%;
 }
 
+#events #about{
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+}
+
+
+.media{
+    font-size: 13px;
+}
 .media > .contact-icon{
-    font-size:15px; 
+    font-size:13px; 
     color: rgb(255, 255, 255);
 }
 
 .media > .contact-media{
     font-size:10px;
     color: rgb(255, 255, 255);
+}
+
+.image{
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+.tmp-button{
+    margin-right: 20px;
 }
 
 }
@@ -314,11 +340,11 @@ div#home{
 }
 
 .contact-icon{
-    font-size:18px; 
+    font-size:16px; 
     color: rgb(255, 255, 255);
 }
 
 .contact-media{
-    font-size:12px;
+    font-size:10px;
     color: rgb(255, 255, 255);
 }
