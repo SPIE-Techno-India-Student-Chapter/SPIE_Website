@@ -288,15 +288,21 @@ div#home{
 .heading{
     font-size: 25px;
 }
-
-.about-lecturer{
+#events > .about-lecturer{
     font-style: normal;        
-    margin-top: 30px; 
-    margin-left: 20px;   
-    width: 80%;
-    border-radius: 26px; 
-   text-align: justify;
-    padding: 0%;
+    margin-top: 30px;     
+    width: 80%; 
+    margin-left: 25px;   
+    text-align: center;     
+    
+}
+
+#events > span{
+    font-style: normal; 
+    padding: 10px 10px 10px px;
+    text-align: center;
+    border-radius: 26px;
+
 }
 
 #events #about{
